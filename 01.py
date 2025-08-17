@@ -2,8 +2,8 @@ from azure.ai.contentsafety import ContentSafetyClient
 from azure.core.credentials import AzureKeyCredential
 from azure.ai.contentsafety.models import AnalyzeImageOptions, ImageData
 
-endpoint = "https://contentsafety578345.cognitiveservices.azure.com/"
-credential = "5gscYl0IBXJCaHJEMfMtjfZHZgHC0VD0AriYEKLs1lE1Q1dEnITuJQQJ99BHACYeBjFXJ3w3AAAHACOGgGlm"
+endpoint = "https://<yourservice>.cognitiveservices.azure.com/"
+credential = "your-azure-key-here"  # Replace with your actual Azure key
 client = ContentSafetyClient(endpoint, AzureKeyCredential(credential))
 
 
